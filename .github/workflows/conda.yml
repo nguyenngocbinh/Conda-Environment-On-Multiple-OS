@@ -38,16 +38,16 @@ jobs:
         git push origin environment-branch
       working-directory: ${{ github.workspace }}
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Activate Conda Environment
       run: conda activate env_ascore
       working-directory: ${{ github.workspace }}
 
-    - name: Install Additional Dependencies (if needed)
-      run: |
-        conda install -c conda-forge some_package
-      working-directory: ${{ github.workspace }}
+    # - name: Install Additional Dependencies (if needed)
+    #   run: |
+    #     conda install -c conda-forge some_package
+    #   working-directory: ${{ github.workspace }}
       
     - name: Run Your Python Script
       run: python your_script.py
