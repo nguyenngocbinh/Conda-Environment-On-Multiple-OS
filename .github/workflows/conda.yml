@@ -1,9 +1,6 @@
-name: Create Conda Environment on Red Hat 8.6
+name: Create Conda Environment and Download Specification
 
-on:
-  push:
-    branches:
-      - feature-branch  # Replace with the name of your target branch
+on: [push]
 
 jobs:
   build:
@@ -16,43 +13,29 @@ jobs:
     - name: Set up Miniconda
       uses: conda-incubator/setup-miniconda@v2
 
-    - name: Create Red Hat 8.6 Docker Container
-      run: |
-        docker run --name redhat-container -d --privileged --cap-add SYS_ADMIN quay.io/ansible/molecule:3.4.0 /sbin/init
-        docker exec -it redhat-container bash
-      shell: bash
-
-    - name: Install Red Hat Subscription Manager
-      run: |
-        dnf install -y subscription-manager
-        subscription-manager register --username=YOUR_USERNAME --password=YOUR_PASSWORD --auto-attach
-      shell: bash
-
-    - name: Install Conda in the Red Hat Container
-      run: |
-        dnf install -y wget
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-        bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/miniconda
-        /opt/miniconda/bin/conda init
-        source ~/.bashrc
-      shell: bash
-
     - name: Create Conda Environment
       run: conda env create -f environment.yml
       working-directory: ${{ github.workspace }}
 
-    # - name: Activate Conda Environment
-    #   run: conda activate myenv
-    #   working-directory: ${{ github.workspace }}
+    - name: Generate Conda Environment Specification
+      run: conda list --explicit > environment_spec.txt
+      working-directory: ${{ github.workspace }}
+
+    - name: Upload Specification as Workflow Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: environment-spec
+        path: environment_spec.txt
+
+    - name: Activate Conda Environment
+      run: conda activate myenv
+      working-directory: ${{ github.workspace }}
 
     # - name: Install Additional Dependencies (if needed)
     #   run: |
     #     conda install -c conda-forge some_package
     #   working-directory: ${{ github.workspace }}
       
-    # - name: Run Your Python Script
-    #   run: python your_script.py
-    #   working-directory: ${{ github.workspace }}
-
-    # - name: Cleanup Red Hat Container
-    #   run: docker stop redhat-container && docker rm redhat-container
+    - name: Run Your Python Script
+      run: python your_script.py
+      working-directory: ${{ github.workspace }}
