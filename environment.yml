@@ -10,7 +10,7 @@ dependencies:
   # - statsmodels==0.13.2
   # - ipykernel
   # - zipp  
-  # - pip
+  - pip
   # - pip: 
   #   - optbinning==0.17.3
   #   - ortools==9.4.1874
