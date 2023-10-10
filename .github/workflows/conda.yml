@@ -1,9 +1,10 @@
 name: Create Conda Environment and Save to Another Branch
 
-on:
-  push:
-    branches:
-      - feature-branch  # Replace with the name of your source branch
+on: [push]
+# on:
+#   push:
+#     branches:
+#       - feature-branch  # Replace with the name of your source branch
 
 jobs:
   build:
@@ -36,6 +37,8 @@ jobs:
         git commit -m "Add environment specification"
         git push origin environment-branch
       working-directory: ${{ github.workspace }}
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Activate Conda Environment
       run: conda activate env_ascore
