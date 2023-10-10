@@ -8,8 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
+    - name: Configure Git
+      run: |
+        git config --global user.email "nguyenngocbinhneu@gmail.com"
+        git config --global user.name "Ngoc Binh"
+
     - name: Checkout code
       uses: actions/checkout@v2
 
