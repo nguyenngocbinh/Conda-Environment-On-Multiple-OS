@@ -31,7 +31,7 @@ jobs:
     - name: Install Red Hat Subscription Manager
       run: |
         dnf install -y subscription-manager
-        subscription-manager register --username=YOUR_USERNAME --password=YOUR_PASSWORD --auto-attach
+        subscription-manager register --username=${{ secrets.REDHAT_USER }} --password=${{ secrets.REDHAT_PWD }} --auto-attach
       shell: bash
 
     - name: Install Conda in the Red Hat Container
