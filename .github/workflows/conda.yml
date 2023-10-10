@@ -19,6 +19,11 @@ jobs:
          git config --global user.email "nguyenngocbinhneu@gmail.com"
          git config --global user.name "Ngoc Binh"
 
+    - name: Delete Existing Branch
+      run: |
+         git branch -D ${{ matrix.os }}-branch
+      continue-on-error: true  # Ignore error if the branch doesn't exis
+      
     - name: Checkout code
       uses: actions/checkout@v2
 
@@ -35,8 +40,7 @@ jobs:
 
     - name: Save Environment Specification to Another Branch
       run: |
-        git checkout -b ${{ matrix.os }}-branch
-        git pull origin ${{ matrix.os }}-branch
+        git checkout -b ${{ matrix.os }}-branch        
         git add environment_spec.txt
         git commit -m "Add environment specification"
         git push origin ${{ matrix.os }}-branch
