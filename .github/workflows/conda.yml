@@ -24,7 +24,7 @@ jobs:
 
     - name: Create Red Hat 8.6 Docker Container
       run: |
-        docker run --name redhat-container -d --privileged --cap-add SYS_ADMIN registry.fedoraproject.org/fedora:34 /sbin/init
+        docker run --name redhat-container -d --privileged --cap-add SYS_ADMIN -v /sys/fs/cgroup:/sys/fs/cgroup:ro registry.fedoraproject.org/fedora:34 /usr/sbin/init
         docker exec -it redhat-container bash
       shell: bash
 
