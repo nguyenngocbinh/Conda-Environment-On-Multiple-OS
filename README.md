@@ -51,7 +51,7 @@
 
        ```yml
         name: Create Conda Environment and Save to Another Branch
-        
+
         on: [push]
         # on:
         #   push:
@@ -92,9 +92,9 @@
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-            - name: Activate Conda Environment
-              run: conda activate env_ascore
-              working-directory: ${{ github.workspace }}
+            # - name: Activate Conda Environment
+            #   run: conda activate env_ascore
+            #   working-directory: ${{ github.workspace }}
         
             # - name: Install Additional Dependencies (if needed)
             #   run: |
