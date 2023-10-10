@@ -1,4 +1,7 @@
-# Conda-Environment-on-RedHat8.6
+# Conda-Environment-on-Linux
+
+- Ubuntu on branch Ubuntu
+- RedHat on branch RedHat
 
 1. Create an `environment_spec.txt` file using GitHub Actions, you can add a step to your workflow that generates this file based on the current Conda environment. Here's how you can do it:
 
