@@ -1,21 +1,19 @@
-name: Create Conda Environment and Save to Another Branch
+name: Create Conda Environment on Multiple OS
 
-on: [push]
-# on:
-#   push:
-#     branches:
-#       - feature-branch  # Replace with the name of your source branch
+on:
+  push:
+    branches:
+      - master  # Replace with your desired branch
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, redhat-latest]  # Add other OS options if needed
+
+    runs-on: ${{ matrix.os }}
 
     steps:
-    - name: Configure Git
-      run: |
-         git config --global user.email "nguyenngocbinhneu@gmail.com"
-         git config --global user.name "Ngoc Binh"
-         
     - name: Checkout code
       uses: actions/checkout@v2
 
@@ -26,29 +24,15 @@ jobs:
       run: conda env create -f environment.yml
       working-directory: ${{ github.workspace }}
 
-    - name: Generate Conda Environment Specification
-      run: conda list --explicit > environment_spec.txt
-      working-directory: ${{ github.workspace }}
-
-    - name: Save Environment Specification to Another Branch
+    - name: Generate environment_spec.txt
       run: |
-        git checkout -b environment-branch
-        git add environment_spec.txt
-        git commit -m "Add environment specification"
-        git push origin environment-branch
+        conda list --explicit > environment_spec.txt
       working-directory: ${{ github.workspace }}
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    # - name: Activate Conda Environment
-    #   run: conda activate myenv
-    #   working-directory: ${{ github.workspace }}
-
-    # - name: Install Additional Dependencies (if needed)
-    #   run: |
-    #     conda install -c conda-forge some_package
-    #   working-directory: ${{ github.workspace }}
-      
-    - name: Run Your Python Script
-      run: python your_script.py
-      working-directory: ${{ github.workspace }}
+    - name: Push environment_spec.txt to Branch
+      uses: ad-m/github-push-action@v1
+      with:
+        repo: https://github.com/nguyenngocbinh/Conda-Environment-on-Linux.git  # Replace with your repository URL
+        branch: ${{ matrix.os }}-branch
+        directory: ./  # The directory where environment_spec.txt is located
+        github_token: ${{ secrets.GITHUB_TOKEN }}
