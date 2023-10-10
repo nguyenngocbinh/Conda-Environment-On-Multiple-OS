@@ -70,9 +70,9 @@ jobs:
     #     conda install -c conda-forge some_package
     #   working-directory: ${{ github.workspace }}
       
-    - name: Run Your Python Script
-      run: python your_script.py
-      working-directory: ${{ github.workspace }}
+    # - name: Run Your Python Script
+    #   run: python your_script.py
+    #   working-directory: ${{ github.workspace }}
 
     - name: Cleanup Red Hat Container
       run: docker stop redhat-container && docker rm redhat-container
