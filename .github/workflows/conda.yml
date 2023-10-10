@@ -38,7 +38,7 @@ jobs:
         git checkout -b envs-branch
         git add environment_spec.txt
         git commit -m "Add environment specification"
-        git push origin environment-branch
+        git push origin envs-branch
       working-directory: ${{ github.workspace }}
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
