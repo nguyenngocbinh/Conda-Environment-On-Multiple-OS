@@ -9,7 +9,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, redhat-latest]  # Add other OS options if needed
+        os: [ubuntu-latest, windows-latest, macos-latest]  # Add other OS options if needed
 
     runs-on: ${{ matrix.os }}
 
