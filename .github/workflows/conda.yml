@@ -38,10 +38,18 @@ jobs:
       run: conda list --explicit > environment_spec.txt
       working-directory: ${{ github.workspace }}
 
+    - name: Copy Conda Environments
+      run: |
+        # Create a temporary directory to store the environments
+        mkdir -p temp_envs
+        cp -r ~/miniconda3/envs/demo_v1/* temp_envs/
+      working-directory: ${{ github.workspace }}
+      
     - name: Save Environment Specification to Another Branch
       run: |
         git checkout -b ${{ matrix.os }}-branch        
-        git add environment_spec.txt
+        # git add environment_spec.txt
+        git add *.*
         git commit -m "Add environment specification"
         git push origin ${{ matrix.os }}-branch --force
       working-directory: ${{ github.workspace }}
