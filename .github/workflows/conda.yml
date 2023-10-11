@@ -9,7 +9,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest, centos-latest, debian-latest, fedora-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest] # , centos-latest, debian-latest, fedora-latest
 
     runs-on: ${{ matrix.os }}
 
@@ -22,7 +22,7 @@ jobs:
     - name: Delete Existing Branch
       run: |
          git branch -D ${{ matrix.os }}-branch
-      continue-on-error: true  # Ignore error if the branch doesn't exis
+      continue-on-error: true  # Ignore error if the branch doesn't exist
       
     - name: Checkout code
       uses: actions/checkout@v2
