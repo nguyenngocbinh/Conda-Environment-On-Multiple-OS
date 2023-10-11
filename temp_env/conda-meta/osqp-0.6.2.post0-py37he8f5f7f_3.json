@@ -1,0 +1,768 @@
+{
+  "build": "py37he8f5f7f_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=9.4.0",
+    "libstdcxx-ng >=9.4.0",
+    "numpy >=1.18.5,<2.0a0",
+    "python >=3.7,<3.8.0a0",
+    "python_abi 3.7.* *_cp37m",
+    "qdldl-python",
+    "scipy"
+  ],
+  "extracted_package_dir": "/home/runner/conda_pkgs_dir/osqp-0.6.2.post0-py37he8f5f7f_3",
+  "files": [
+    "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/LICENSE",
+    "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/METADATA",
+    "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/RECORD",
+    "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/REQUESTED",
+    "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/WHEEL",
+    "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/direct_url.json",
+    "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/osqp/__init__.py",
+    "lib/python3.7/site-packages/osqp/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/__pycache__/interface.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/__pycache__/utils.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/_osqp.cpython-37m-x86_64-linux-gnu.so",
+    "lib/python3.7/site-packages/osqp/codegen/__init__.py",
+    "lib/python3.7/site-packages/osqp/codegen/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/codegen/__pycache__/code_generator.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/codegen/__pycache__/utils.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/codegen/code_generator.py",
+    "lib/python3.7/site-packages/osqp/codegen/files_to_generate/CMakeLists.txt",
+    "lib/python3.7/site-packages/osqp/codegen/files_to_generate/__pycache__/setup.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/codegen/files_to_generate/emosqpmodule.c",
+    "lib/python3.7/site-packages/osqp/codegen/files_to_generate/example.c",
+    "lib/python3.7/site-packages/osqp/codegen/files_to_generate/setup.py",
+    "lib/python3.7/site-packages/osqp/codegen/sources/configure/osqp_configure.h.in",
+    "lib/python3.7/site-packages/osqp/codegen/sources/configure/qdldl_types.h.in",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/CMakeLists.txt",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/auxil.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/constants.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/error.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/glob_opts.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/kkt.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/lin_alg.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/osqp.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/proj.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/qdldl.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/qdldl_interface.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/scaling.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/types.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/include/util.h",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/CMakeLists.txt",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/auxil.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/error.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/kkt.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/lin_alg.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/osqp.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/proj.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/qdldl.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/qdldl_interface.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/scaling.c",
+    "lib/python3.7/site-packages/osqp/codegen/sources/src/util.c",
+    "lib/python3.7/site-packages/osqp/codegen/utils.py",
+    "lib/python3.7/site-packages/osqp/interface.py",
+    "lib/python3.7/site-packages/osqp/tests/__init__.py",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/basic_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/codegen_matrices_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/codegen_vectors_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/derivative_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/dual_infeasibility_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/feasibility_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/mkl_pardiso_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/multithread_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/non_convex_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/polishing_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/primal_infeasibility_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/unconstrained_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/update_matrices_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/utils.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/__pycache__/warm_start_test.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqp/tests/basic_test.py",
+    "lib/python3.7/site-packages/osqp/tests/codegen_matrices_test.py",
+    "lib/python3.7/site-packages/osqp/tests/codegen_vectors_test.py",
+    "lib/python3.7/site-packages/osqp/tests/derivative_test.py",
+    "lib/python3.7/site-packages/osqp/tests/dual_infeasibility_test.py",
+    "lib/python3.7/site-packages/osqp/tests/feasibility_test.py",
+    "lib/python3.7/site-packages/osqp/tests/mkl_pardiso_test.py",
+    "lib/python3.7/site-packages/osqp/tests/multithread_test.py",
+    "lib/python3.7/site-packages/osqp/tests/non_convex_test.py",
+    "lib/python3.7/site-packages/osqp/tests/polishing_test.py",
+    "lib/python3.7/site-packages/osqp/tests/primal_infeasibility_test.py",
+    "lib/python3.7/site-packages/osqp/tests/unconstrained_test.py",
+    "lib/python3.7/site-packages/osqp/tests/update_matrices_test.py",
+    "lib/python3.7/site-packages/osqp/tests/utils.py",
+    "lib/python3.7/site-packages/osqp/tests/warm_start_test.py",
+    "lib/python3.7/site-packages/osqp/utils.py",
+    "lib/python3.7/site-packages/osqppurepy/__init__.py",
+    "lib/python3.7/site-packages/osqppurepy/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqppurepy/__pycache__/_osqp.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqppurepy/__pycache__/interface.cpython-37.pyc",
+    "lib/python3.7/site-packages/osqppurepy/_osqp.py",
+    "lib/python3.7/site-packages/osqppurepy/interface.py"
+  ],
+  "fn": "osqp-0.6.2.post0-py37he8f5f7f_3.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/home/runner/conda_pkgs_dir/osqp-0.6.2.post0-py37he8f5f7f_3",
+    "type": 1
+  },
+  "md5": "1e50ed13e6b6573c32ef31c0c20220e8",
+  "name": "osqp",
+  "package_tarball_full_path": "/home/runner/conda_pkgs_dir/osqp-0.6.2.post0-py37he8f5f7f_3.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "sha256_in_prefix": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "size_in_bytes": 11357
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5cbcd47b458602f659a803f187a7b6fe04d2b69c517399dc210ea3b1adab8a76",
+        "sha256_in_prefix": "5cbcd47b458602f659a803f187a7b6fe04d2b69c517399dc210ea3b1adab8a76",
+        "size_in_bytes": 1509
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "2293a36237fa1866fab62d4f44c66edf3c495b8ed7d9b1dd2934d9ad298cd7d5",
+        "sha256_in_prefix": "2293a36237fa1866fab62d4f44c66edf3c495b8ed7d9b1dd2934d9ad298cd7d5",
+        "size_in_bytes": 7293
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7fb3facf40f0f4168c5bcb4e5f5415f50808e71509b03de30b00319831b8f84d",
+        "sha256_in_prefix": "7fb3facf40f0f4168c5bcb4e5f5415f50808e71509b03de30b00319831b8f84d",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "02b08b55b5df5bb5f2be51aedffc2cfbf06420d30bd971edf3cd49c24ba36e85",
+        "sha256_in_prefix": "02b08b55b5df5bb5f2be51aedffc2cfbf06420d30bd971edf3cd49c24ba36e85",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp-0.6.2.post0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f5ff251bd65fab8d28f9fa3b28a5b46ca9d64983333013fb8e55bb984d3ed8b5",
+        "sha256_in_prefix": "f5ff251bd65fab8d28f9fa3b28a5b46ca9d64983333013fb8e55bb984d3ed8b5",
+        "size_in_bytes": 16
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "94f5fc75d1077dfc8f90fb9940a49e674e3c2cf22a667369e5ae263d6aad7289",
+        "sha256_in_prefix": "94f5fc75d1077dfc8f90fb9940a49e674e3c2cf22a667369e5ae263d6aad7289",
+        "size_in_bytes": 64
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "ccb387f5857cac981236de6fec81e1f354c67b6a11f36b1152d5864a5d5e64a2",
+        "sha256_in_prefix": "ccb387f5857cac981236de6fec81e1f354c67b6a11f36b1152d5864a5d5e64a2",
+        "size_in_bytes": 217
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/__pycache__/interface.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "b4003194e647b444073bff1a693baa86d165e94803b434944bb42763c03b614b",
+        "sha256_in_prefix": "b4003194e647b444073bff1a693baa86d165e94803b434944bb42763c03b614b",
+        "size_in_bytes": 8984
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/__pycache__/utils.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "726291319f6ef77041a119b577a6b0338be2e1ddee025d73ec1f039cf6128f56",
+        "sha256_in_prefix": "726291319f6ef77041a119b577a6b0338be2e1ddee025d73ec1f039cf6128f56",
+        "size_in_bytes": 2848
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/_osqp.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "29319ed72819f86ffa8953c7a983c839c528283f0467cd16277d2b79c6d28b54",
+        "sha256_in_prefix": "29319ed72819f86ffa8953c7a983c839c528283f0467cd16277d2b79c6d28b54",
+        "size_in_bytes": 164424
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "309afe6f44a08121a568cab3c90ecf418f8997fb670e9994fe1a648c7fd142d5",
+        "sha256_in_prefix": "309afe6f44a08121a568cab3c90ecf418f8997fb670e9994fe1a648c7fd142d5",
+        "size_in_bytes": 48
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "395968633ac4c3834a974c0610979732139cfd17dc9a102b5e1d2c7ababa9fad",
+        "sha256_in_prefix": "395968633ac4c3834a974c0610979732139cfd17dc9a102b5e1d2c7ababa9fad",
+        "size_in_bytes": 198
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/__pycache__/code_generator.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "180baf65135a7b8cc2ac5df4a989492a0bd3fefb30e8b04a808f0790b73b0b50",
+        "sha256_in_prefix": "180baf65135a7b8cc2ac5df4a989492a0bd3fefb30e8b04a808f0790b73b0b50",
+        "size_in_bytes": 3503
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/__pycache__/utils.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "a23064ab905a0005180e952586c99ba37387fabb3e746f2e37ca9a0224823864",
+        "sha256_in_prefix": "a23064ab905a0005180e952586c99ba37387fabb3e746f2e37ca9a0224823864",
+        "size_in_bytes": 14465
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/code_generator.py",
+        "path_type": "hardlink",
+        "sha256": "bc4bddc2232e8a5ac386e2b3e9c218d4fb66761b30bd216638296b95730ee7c4",
+        "sha256_in_prefix": "bc4bddc2232e8a5ac386e2b3e9c218d4fb66761b30bd216638296b95730ee7c4",
+        "size_in_bytes": 6774
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/files_to_generate/CMakeLists.txt",
+        "path_type": "hardlink",
+        "sha256": "31dd576d84d81adece3ccad3ae8f29f92a4e51f58de37fc54cd02d1c64a54c8a",
+        "sha256_in_prefix": "31dd576d84d81adece3ccad3ae8f29f92a4e51f58de37fc54cd02d1c64a54c8a",
+        "size_in_bytes": 4187
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/files_to_generate/__pycache__/setup.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "4277d3d97f79e0efe9e5a079d3903f489fd4962bec3db4d6f3fa8f25c36c8b89",
+        "sha256_in_prefix": "4277d3d97f79e0efe9e5a079d3903f489fd4962bec3db4d6f3fa8f25c36c8b89",
+        "size_in_bytes": 1974
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/files_to_generate/emosqpmodule.c",
+        "path_type": "hardlink",
+        "sha256": "31857b40f553a400f2e544bb70734f949dcd815b067ed6899358ade17fd4873a",
+        "sha256_in_prefix": "31857b40f553a400f2e544bb70734f949dcd815b067ed6899358ade17fd4873a",
+        "size_in_bytes": 18291
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/files_to_generate/example.c",
+        "path_type": "hardlink",
+        "sha256": "743cec78b1883e42f2f5c15cfb0d222f33cf7dce6d3f04314f7b3289fb7429c9",
+        "sha256_in_prefix": "743cec78b1883e42f2f5c15cfb0d222f33cf7dce6d3f04314f7b3289fb7429c9",
+        "size_in_bytes": 573
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/files_to_generate/setup.py",
+        "path_type": "hardlink",
+        "sha256": "c14e31573be274250780984bab16ed283661d822d1dbabac90b90e010a4aada2",
+        "sha256_in_prefix": "c14e31573be274250780984bab16ed283661d822d1dbabac90b90e010a4aada2",
+        "size_in_bytes": 2392
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/configure/osqp_configure.h.in",
+        "path_type": "hardlink",
+        "sha256": "ef347a30fbd09f894fcceac3c25bd29c096f5a622571cda4e941c88bef67a77a",
+        "sha256_in_prefix": "ef347a30fbd09f894fcceac3c25bd29c096f5a622571cda4e941c88bef67a77a",
+        "size_in_bytes": 741
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/configure/qdldl_types.h.in",
+        "path_type": "hardlink",
+        "sha256": "b48f0e8bdfaa0f0f5a06493f41c5cc4defabe8e1de826153eaec957c3f5b7d91",
+        "sha256_in_prefix": "b48f0e8bdfaa0f0f5a06493f41c5cc4defabe8e1de826153eaec957c3f5b7d91",
+        "size_in_bytes": 571
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/CMakeLists.txt",
+        "path_type": "hardlink",
+        "sha256": "d346b17ba746688454eba8c5c82721e3d97239017effcf295e40264a8dc3edeb",
+        "sha256_in_prefix": "d346b17ba746688454eba8c5c82721e3d97239017effcf295e40264a8dc3edeb",
+        "size_in_bytes": 1272
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/auxil.h",
+        "path_type": "hardlink",
+        "sha256": "1e8ca1d2d5a012715d7e5416250b5bb19a7315bc84f94dd097990d0e1f6980a3",
+        "sha256_in_prefix": "1e8ca1d2d5a012715d7e5416250b5bb19a7315bc84f94dd097990d0e1f6980a3",
+        "size_in_bytes": 3901
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/constants.h",
+        "path_type": "hardlink",
+        "sha256": "baf7ec847bf0daa040b13cff196e7f1332da0fe3c6c921af968a462666a15ceb",
+        "sha256_in_prefix": "baf7ec847bf0daa040b13cff196e7f1332da0fe3c6c921af968a462666a15ceb",
+        "size_in_bytes": 3729
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/error.h",
+        "path_type": "hardlink",
+        "sha256": "abd178fedd4f9c91381b6580ed2b4512d749770c823ddc0e3b1053828b42d8cb",
+        "sha256_in_prefix": "abd178fedd4f9c91381b6580ed2b4512d749770c823ddc0e3b1053828b42d8cb",
+        "size_in_bytes": 760
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/glob_opts.h",
+        "path_type": "hardlink",
+        "sha256": "c6501648c91054c54d09474a045a761b88430ff79fdfc2e0d1d4f3b7f5e343fe",
+        "sha256_in_prefix": "c6501648c91054c54d09474a045a761b88430ff79fdfc2e0d1d4f3b7f5e343fe",
+        "size_in_bytes": 4686
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/kkt.h",
+        "path_type": "hardlink",
+        "sha256": "1d067c68b8a81afb190985740ce62c434b84556eb850deb77821a6b7d9c6f9f7",
+        "sha256_in_prefix": "1d067c68b8a81afb190985740ce62c434b84556eb850deb77821a6b7d9c6f9f7",
+        "size_in_bytes": 3266
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/lin_alg.h",
+        "path_type": "hardlink",
+        "sha256": "2b4ed81f5a2e2e7eb34a9b7b3b875824c8aee1381b308a2bd86b8faf15efad34",
+        "sha256_in_prefix": "2b4ed81f5a2e2e7eb34a9b7b3b875824c8aee1381b308a2bd86b8faf15efad34",
+        "size_in_bytes": 5678
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/osqp.h",
+        "path_type": "hardlink",
+        "sha256": "fd7243e3907e26618f8965954a9cba3c29d16a3622ca96696bb8503972b3cc6b",
+        "sha256_in_prefix": "fd7243e3907e26618f8965954a9cba3c29d16a3622ca96696bb8503972b3cc6b",
+        "size_in_bytes": 11814
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/proj.h",
+        "path_type": "hardlink",
+        "sha256": "c4dd3e009756b2834fed55ae13080c2757bfe97b994de596b0b7a9afb58b2538",
+        "sha256_in_prefix": "c4dd3e009756b2834fed55ae13080c2757bfe97b994de596b0b7a9afb58b2538",
+        "size_in_bytes": 726
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/qdldl.h",
+        "path_type": "hardlink",
+        "sha256": "655d5e234e247e8b0d61f476586ba78abdb7d98eb7919e738c19da5116a985ca",
+        "sha256_in_prefix": "655d5e234e247e8b0d61f476586ba78abdb7d98eb7919e738c19da5116a985ca",
+        "size_in_bytes": 6397
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/qdldl_interface.h",
+        "path_type": "hardlink",
+        "sha256": "5aae20d606cec4555ce3dd548740528630953c01fe9a9a8c280937ad767d9241",
+        "sha256_in_prefix": "5aae20d606cec4555ce3dd548740528630953c01fe9a9a8c280937ad767d9241",
+        "size_in_bytes": 3729
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/scaling.h",
+        "path_type": "hardlink",
+        "sha256": "115a21bdb28c4dda236fd7c1d44d5fa62546ffeff12cc2346cf42283e482c4bc",
+        "sha256_in_prefix": "115a21bdb28c4dda236fd7c1d44d5fa62546ffeff12cc2346cf42283e482c4bc",
+        "size_in_bytes": 778
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/types.h",
+        "path_type": "hardlink",
+        "sha256": "5d37d2351e5c604c3b7944c60a6d4f594b65bee89ecdacb573d2787a5fa913cc",
+        "sha256_in_prefix": "5d37d2351e5c604c3b7944c60a6d4f594b65bee89ecdacb573d2787a5fa913cc",
+        "size_in_bytes": 10256
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/include/util.h",
+        "path_type": "hardlink",
+        "sha256": "5de324451e9fe8b2f0c2921a4ccf2eff6d7ea75dd3bfac420ade74cca56a17dc",
+        "sha256_in_prefix": "5de324451e9fe8b2f0c2921a4ccf2eff6d7ea75dd3bfac420ade74cca56a17dc",
+        "size_in_bytes": 4109
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/CMakeLists.txt",
+        "path_type": "hardlink",
+        "sha256": "0952a24db089a8465450f17be305c3aa01cb0e70eb609d4cacea935c4e659a44",
+        "sha256_in_prefix": "0952a24db089a8465450f17be305c3aa01cb0e70eb609d4cacea935c4e659a44",
+        "size_in_bytes": 1067
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/auxil.c",
+        "path_type": "hardlink",
+        "sha256": "cbc49b6eb6b614e2e4c6c6497547de5dafb87ea72289cda28bfb821e1c696786",
+        "sha256_in_prefix": "cbc49b6eb6b614e2e4c6c6497547de5dafb87ea72289cda28bfb821e1c696786",
+        "size_in_bytes": 31823
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/error.c",
+        "path_type": "hardlink",
+        "sha256": "ec1123453c601f1aab1a4a507acdec6fff6effa90cff752f8e16adb878191d0c",
+        "sha256_in_prefix": "ec1123453c601f1aab1a4a507acdec6fff6effa90cff752f8e16adb878191d0c",
+        "size_in_bytes": 601
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/kkt.c",
+        "path_type": "hardlink",
+        "sha256": "050617eb25e161e23f052d912a22ef42379b770419cfc1046d2587f726c8344a",
+        "sha256_in_prefix": "050617eb25e161e23f052d912a22ef42379b770419cfc1046d2587f726c8344a",
+        "size_in_bytes": 6862
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/lin_alg.c",
+        "path_type": "hardlink",
+        "sha256": "053eef983a61493a6986fc7e839f54e2e162627340720045b05af905b235e650",
+        "sha256_in_prefix": "053eef983a61493a6986fc7e839f54e2e162627340720045b05af905b235e650",
+        "size_in_bytes": 8570
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/osqp.c",
+        "path_type": "hardlink",
+        "sha256": "bffcc291bd70124340946f22e84730b9c13f1117a7b2b10fe3d3139f8561f800",
+        "sha256_in_prefix": "bffcc291bd70124340946f22e84730b9c13f1117a7b2b10fe3d3139f8561f800",
+        "size_in_bytes": 47667
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/proj.c",
+        "path_type": "hardlink",
+        "sha256": "3245329ce4f9dfbb941866506db1530dc70b80d7dbe34b362abccf5bab29884c",
+        "sha256_in_prefix": "3245329ce4f9dfbb941866506db1530dc70b80d7dbe34b362abccf5bab29884c",
+        "size_in_bytes": 660
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/qdldl.c",
+        "path_type": "hardlink",
+        "sha256": "21a3976c7d7b64026f73d40ca344eb41336ddde002c538867137b4f831c5157b",
+        "sha256_in_prefix": "21a3976c7d7b64026f73d40ca344eb41336ddde002c538867137b4f831c5157b",
+        "size_in_bytes": 7683
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/qdldl_interface.c",
+        "path_type": "hardlink",
+        "sha256": "06be568ec029fec2b5a045438c383c66213c1a8e765b070d964d81f2fa52f69f",
+        "sha256_in_prefix": "06be568ec029fec2b5a045438c383c66213c1a8e765b070d964d81f2fa52f69f",
+        "size_in_bytes": 11867
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/scaling.c",
+        "path_type": "hardlink",
+        "sha256": "737583f05f212bf42808db42bc346622b230b57f61d6aa75ec49578bfd924f04",
+        "sha256_in_prefix": "737583f05f212bf42808db42bc346622b230b57f61d6aa75ec49578bfd924f04",
+        "size_in_bytes": 5469
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/sources/src/util.c",
+        "path_type": "hardlink",
+        "sha256": "f930d32eccf66b63820bb308c3f5e1c4464fcad8b5cf5c8b95ce33499cd19737",
+        "sha256_in_prefix": "f930d32eccf66b63820bb308c3f5e1c4464fcad8b5cf5c8b95ce33499cd19737",
+        "size_in_bytes": 11623
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/codegen/utils.py",
+        "path_type": "hardlink",
+        "sha256": "b4bb9973355ccdd64fdc7ed9dd53f761471ee5735c3e93916000aa4417a45cfa",
+        "sha256_in_prefix": "b4bb9973355ccdd64fdc7ed9dd53f761471ee5735c3e93916000aa4417a45cfa",
+        "size_in_bytes": 17767
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/interface.py",
+        "path_type": "hardlink",
+        "sha256": "7c74edf25e7d4ba8152b400dcd1becdbdbc022ac089d5ce38e9a8bfe4a77aa67",
+        "sha256_in_prefix": "7c74edf25e7d4ba8152b400dcd1becdbdbc022ac089d5ce38e9a8bfe4a77aa67",
+        "size_in_bytes": 13974
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7aa6b3c1bde04eaa0e0576937c2fb4a39d84d435a4307ce5492e71790c681c1a",
+        "sha256_in_prefix": "7aa6b3c1bde04eaa0e0576937c2fb4a39d84d435a4307ce5492e71790c681c1a",
+        "size_in_bytes": 32
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "1d18b545dea5839fec4755274906b1ad2cbcd308a74b868ab3ce97de8b728374",
+        "sha256_in_prefix": "1d18b545dea5839fec4755274906b1ad2cbcd308a74b868ab3ce97de8b728374",
+        "size_in_bytes": 180
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/basic_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "50860544930f0848d9cb7a9e627180da5686e87b99625b338e16044e82f5884e",
+        "sha256_in_prefix": "50860544930f0848d9cb7a9e627180da5686e87b99625b338e16044e82f5884e",
+        "size_in_bytes": 5040
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/codegen_matrices_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "5e72aa9a9e65abe8ce780c84a83cd11dcf13f579ce1db6ae65539bc855ac300f",
+        "sha256_in_prefix": "5e72aa9a9e65abe8ce780c84a83cd11dcf13f579ce1db6ae65539bc855ac300f",
+        "size_in_bytes": 5677
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/codegen_vectors_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "ab8577131e4e156f12f2143d76284a92d2967e399f04111ac9f4a9024110bc00",
+        "sha256_in_prefix": "ab8577131e4e156f12f2143d76284a92d2967e399f04111ac9f4a9024110bc00",
+        "size_in_bytes": 3390
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/derivative_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "69b9aaf78564c345b3b6f2fdc36ae3cbe4c4cde08fa1527ce88702589c208a3d",
+        "sha256_in_prefix": "69b9aaf78564c345b3b6f2fdc36ae3cbe4c4cde08fa1527ce88702589c208a3d",
+        "size_in_bytes": 7668
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/dual_infeasibility_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "45565d286b82b2658f5ce8c4249b36855a523faa7b460d8366dddced0301869b",
+        "sha256_in_prefix": "45565d286b82b2658f5ce8c4249b36855a523faa7b460d8366dddced0301869b",
+        "size_in_bytes": 2748
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/feasibility_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "8fe7b82d963afb9a38b017e37d033f7755c5eb7d77485b8ddbf6b693a27d2c31",
+        "sha256_in_prefix": "8fe7b82d963afb9a38b017e37d033f7755c5eb7d77485b8ddbf6b693a27d2c31",
+        "size_in_bytes": 1784
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/mkl_pardiso_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "ceeefeedea4d2524f32fe810accb5116332962b2d70ff1eca1fc343ebc0f3953",
+        "sha256_in_prefix": "ceeefeedea4d2524f32fe810accb5116332962b2d70ff1eca1fc343ebc0f3953",
+        "size_in_bytes": 987
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/multithread_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "f9789c76553892f71787d3c064dacc565b79536fc77fe5ee0070bd1e21c43956",
+        "sha256_in_prefix": "f9789c76553892f71787d3c064dacc565b79536fc77fe5ee0070bd1e21c43956",
+        "size_in_bytes": 1532
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/non_convex_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "8717690449cea99b4e3eb1faa58bac1e78282e064600007548bd0d564c5b8e5c",
+        "sha256_in_prefix": "8717690449cea99b4e3eb1faa58bac1e78282e064600007548bd0d564c5b8e5c",
+        "size_in_bytes": 1978
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/polishing_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "0fd8bbe19d0c632e338b211c7f990f15fbb6e5f6adf05f19ba92a46130cf5f81",
+        "sha256_in_prefix": "0fd8bbe19d0c632e338b211c7f990f15fbb6e5f6adf05f19ba92a46130cf5f81",
+        "size_in_bytes": 3188
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/primal_infeasibility_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "1c953ba413832ff50864b7149f67a93a3a99f5631f355d820ad5137f56fce541",
+        "sha256_in_prefix": "1c953ba413832ff50864b7149f67a93a3a99f5631f355d820ad5137f56fce541",
+        "size_in_bytes": 2316
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/unconstrained_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "1b8366ad862bb06fc9d3c022c94f4623abe0cab35bc97ee5c59f7563aa2fd1da",
+        "sha256_in_prefix": "1b8366ad862bb06fc9d3c022c94f4623abe0cab35bc97ee5c59f7563aa2fd1da",
+        "size_in_bytes": 1648
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/update_matrices_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "3ede668fdd1b72af1a47f7b6bb9aa4bcf8d6cb9ce15402693bb36b4c68de4489",
+        "sha256_in_prefix": "3ede668fdd1b72af1a47f7b6bb9aa4bcf8d6cb9ce15402693bb36b4c68de4489",
+        "size_in_bytes": 5728
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/utils.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "0d861351b9cc004822e67d6d7534e27ef289dc0d6f5529fa02a7e6849113254a",
+        "sha256_in_prefix": "0d861351b9cc004822e67d6d7534e27ef289dc0d6f5529fa02a7e6849113254a",
+        "size_in_bytes": 1423
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/__pycache__/warm_start_test.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "b9f58170abe9d733e59d59fa0abf5682c7aa1eec29a8187a7cc72c1f3ba47872",
+        "sha256_in_prefix": "b9f58170abe9d733e59d59fa0abf5682c7aa1eec29a8187a7cc72c1f3ba47872",
+        "size_in_bytes": 1532
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/basic_test.py",
+        "path_type": "hardlink",
+        "sha256": "4fd72079086cafddd037ed677ec55ad655360a25f80a975ecad1f1fd4ebb4b91",
+        "sha256_in_prefix": "4fd72079086cafddd037ed677ec55ad655360a25f80a975ecad1f1fd4ebb4b91",
+        "size_in_bytes": 6598
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/codegen_matrices_test.py",
+        "path_type": "hardlink",
+        "sha256": "2e877f4c33a2b0b23808be0d2363361b01b1beeb7fa785e523b28367f8e322d8",
+        "sha256_in_prefix": "2e877f4c33a2b0b23808be0d2363361b01b1beeb7fa785e523b28367f8e322d8",
+        "size_in_bytes": 7046
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/codegen_vectors_test.py",
+        "path_type": "hardlink",
+        "sha256": "6c05b789ccd9d53b7a201bba3e97e5bd536589d10c2d206d9df17dc7c3047f6f",
+        "sha256_in_prefix": "6c05b789ccd9d53b7a201bba3e97e5bd536589d10c2d206d9df17dc7c3047f6f",
+        "size_in_bytes": 3770
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/derivative_test.py",
+        "path_type": "hardlink",
+        "sha256": "8fd58355cc0da93b2927707dccca27572b9050196c4226dbd734034be5188063",
+        "sha256_in_prefix": "8fd58355cc0da93b2927707dccca27572b9050196c4226dbd734034be5188063",
+        "size_in_bytes": 6736
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/dual_infeasibility_test.py",
+        "path_type": "hardlink",
+        "sha256": "b8019d1c9b21db1c7a7dded858b84ffd3090eaf9fdc50ffac28768224971cbc5",
+        "sha256_in_prefix": "b8019d1c9b21db1c7a7dded858b84ffd3090eaf9fdc50ffac28768224971cbc5",
+        "size_in_bytes": 2910
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/feasibility_test.py",
+        "path_type": "hardlink",
+        "sha256": "d9b901762f9685a1afbb2490ef3ee30d7f6f24564a044db7e63a1fbad9687359",
+        "sha256_in_prefix": "d9b901762f9685a1afbb2490ef3ee30d7f6f24564a044db7e63a1fbad9687359",
+        "size_in_bytes": 1801
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/mkl_pardiso_test.py",
+        "path_type": "hardlink",
+        "sha256": "d35f73e66f1842e449b2a91e4e3b1e86044379f3bbddd7b728690b47c87fc07a",
+        "sha256_in_prefix": "d35f73e66f1842e449b2a91e4e3b1e86044379f3bbddd7b728690b47c87fc07a",
+        "size_in_bytes": 745
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/multithread_test.py",
+        "path_type": "hardlink",
+        "sha256": "981f8f423ee8e291c2d5077dfbea3b64f8e67cf8815575620894fc420797c338",
+        "sha256_in_prefix": "981f8f423ee8e291c2d5077dfbea3b64f8e67cf8815575620894fc420797c338",
+        "size_in_bytes": 1396
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/non_convex_test.py",
+        "path_type": "hardlink",
+        "sha256": "0769ef69eec835613b6f77fde44349a837da406e4dcd4fa0ae588c84970f40f0",
+        "sha256_in_prefix": "0769ef69eec835613b6f77fde44349a837da406e4dcd4fa0ae588c84970f40f0",
+        "size_in_bytes": 1669
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/polishing_test.py",
+        "path_type": "hardlink",
+        "sha256": "1373b49ca7142060d756aff7d3c51f05f756d0e8b1adb14f44f0867cbeb08984",
+        "sha256_in_prefix": "1373b49ca7142060d756aff7d3c51f05f756d0e8b1adb14f44f0867cbeb08984",
+        "size_in_bytes": 3699
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/primal_infeasibility_test.py",
+        "path_type": "hardlink",
+        "sha256": "d215e357df308edc2ab75d8df70ebc652b2290cc7b78f40ea59cd44e6ceae103",
+        "sha256_in_prefix": "d215e357df308edc2ab75d8df70ebc652b2290cc7b78f40ea59cd44e6ceae103",
+        "size_in_bytes": 2446
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/unconstrained_test.py",
+        "path_type": "hardlink",
+        "sha256": "7c3ecffc6e96befea861198e0e872d769153815b652d5903efb789f26c50a76b",
+        "sha256_in_prefix": "7c3ecffc6e96befea861198e0e872d769153815b652d5903efb789f26c50a76b",
+        "size_in_bytes": 1519
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/update_matrices_test.py",
+        "path_type": "hardlink",
+        "sha256": "06841b8b6ab03e6fe11fa8d41aa9878b3d698211edcbecfeecbbf669b2090071",
+        "sha256_in_prefix": "06841b8b6ab03e6fe11fa8d41aa9878b3d698211edcbecfeecbbf669b2090071",
+        "size_in_bytes": 7005
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/utils.py",
+        "path_type": "hardlink",
+        "sha256": "eeacd5e774e63b9c01275e20ebba522a4f5a5a8628eabd24444994c5658df603",
+        "sha256_in_prefix": "eeacd5e774e63b9c01275e20ebba522a4f5a5a8628eabd24444994c5658df603",
+        "size_in_bytes": 1872
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/tests/warm_start_test.py",
+        "path_type": "hardlink",
+        "sha256": "fe67f45ef223f6dceeb7a4df27599f8c44353227641479c122df18231211dc9c",
+        "sha256_in_prefix": "fe67f45ef223f6dceeb7a4df27599f8c44353227641479c122df18231211dc9c",
+        "size_in_bytes": 1743
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqp/utils.py",
+        "path_type": "hardlink",
+        "sha256": "71e227aa76dab8b25e9ce540bf4290ae8e759a6fc594c27649dd1c199bf5ba7d",
+        "sha256_in_prefix": "71e227aa76dab8b25e9ce540bf4290ae8e759a6fc594c27649dd1c199bf5ba7d",
+        "size_in_bytes": 5129
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqppurepy/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6f132be058f5ff04c9d0a30353a04ff9028545b4ddd0f45a7110e366660310e4",
+        "sha256_in_prefix": "6f132be058f5ff04c9d0a30353a04ff9028545b4ddd0f45a7110e366660310e4",
+        "size_in_bytes": 38
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqppurepy/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "bb48e1d13d462a82fe0949d207b77cd93aebc3c52c89123a62a49dc84e51b55a",
+        "sha256_in_prefix": "bb48e1d13d462a82fe0949d207b77cd93aebc3c52c89123a62a49dc84e51b55a",
+        "size_in_bytes": 186
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqppurepy/__pycache__/_osqp.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "f1867e851428a5ddd1c8e545fae10807d40c34e51ab8f3a638d1e154223312ce",
+        "sha256_in_prefix": "f1867e851428a5ddd1c8e545fae10807d40c34e51ab8f3a638d1e154223312ce",
+        "size_in_bytes": 41992
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqppurepy/__pycache__/interface.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "d474759d4416a930ea325b359acdf69ea1964ea147922306c408c7f579620a3e",
+        "sha256_in_prefix": "d474759d4416a930ea325b359acdf69ea1964ea147922306c408c7f579620a3e",
+        "size_in_bytes": 6143
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqppurepy/_osqp.py",
+        "path_type": "hardlink",
+        "sha256": "d3d15e331f9e0e3050b365bf26e067bee0da3b24b0fe477c6598d9c36c989741",
+        "sha256_in_prefix": "d3d15e331f9e0e3050b365bf26e067bee0da3b24b0fe477c6598d9c36c989741",
+        "size_in_bytes": 63336
+      },
+      {
+        "_path": "lib/python3.7/site-packages/osqppurepy/interface.py",
+        "path_type": "hardlink",
+        "sha256": "5a9c2eb49121d667579ca4971455153b996201788dd46c6073a96bec6584fc4e",
+        "sha256_in_prefix": "5a9c2eb49121d667579ca4971455153b996201788dd46c6073a96bec6584fc4e",
+        "size_in_bytes": 9432
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "osqp",
+  "sha256": "f9555cb79f6a08c434accb41bf58b23d7be681696cfc406805a70ca86d1bc82d",
+  "size": 188887,
+  "subdir": "linux-64",
+  "timestamp": 1636447498391,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/osqp-0.6.2.post0-py37he8f5f7f_3.tar.bz2",
+  "version": "0.6.2.post0"
+}

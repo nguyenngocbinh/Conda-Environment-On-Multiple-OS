@@ -1,0 +1,501 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "h11 0.*",
+    "h2 >=3,<5",
+    "python >=3.6",
+    "sniffio 1.*"
+  ],
+  "extracted_package_dir": "/home/runner/conda_pkgs_dir/httpcore-0.12.3-pyhd8ed1ab_0",
+  "files": [
+    "lib/python3.7/site-packages/httpcore-0.12.3.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/httpcore-0.12.3.dist-info/LICENSE.md",
+    "lib/python3.7/site-packages/httpcore-0.12.3.dist-info/METADATA",
+    "lib/python3.7/site-packages/httpcore-0.12.3.dist-info/RECORD",
+    "lib/python3.7/site-packages/httpcore-0.12.3.dist-info/REQUESTED",
+    "lib/python3.7/site-packages/httpcore-0.12.3.dist-info/WHEEL",
+    "lib/python3.7/site-packages/httpcore-0.12.3.dist-info/direct_url.json",
+    "lib/python3.7/site-packages/httpcore-0.12.3.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/httpcore/__init__.py",
+    "lib/python3.7/site-packages/httpcore/_async/__init__.py",
+    "lib/python3.7/site-packages/httpcore/_async/base.py",
+    "lib/python3.7/site-packages/httpcore/_async/connection.py",
+    "lib/python3.7/site-packages/httpcore/_async/connection_pool.py",
+    "lib/python3.7/site-packages/httpcore/_async/http.py",
+    "lib/python3.7/site-packages/httpcore/_async/http11.py",
+    "lib/python3.7/site-packages/httpcore/_async/http2.py",
+    "lib/python3.7/site-packages/httpcore/_async/http_proxy.py",
+    "lib/python3.7/site-packages/httpcore/_backends/__init__.py",
+    "lib/python3.7/site-packages/httpcore/_backends/anyio.py",
+    "lib/python3.7/site-packages/httpcore/_backends/asyncio.py",
+    "lib/python3.7/site-packages/httpcore/_backends/auto.py",
+    "lib/python3.7/site-packages/httpcore/_backends/base.py",
+    "lib/python3.7/site-packages/httpcore/_backends/curio.py",
+    "lib/python3.7/site-packages/httpcore/_backends/sync.py",
+    "lib/python3.7/site-packages/httpcore/_backends/trio.py",
+    "lib/python3.7/site-packages/httpcore/_bytestreams.py",
+    "lib/python3.7/site-packages/httpcore/_exceptions.py",
+    "lib/python3.7/site-packages/httpcore/_sync/__init__.py",
+    "lib/python3.7/site-packages/httpcore/_sync/base.py",
+    "lib/python3.7/site-packages/httpcore/_sync/connection.py",
+    "lib/python3.7/site-packages/httpcore/_sync/connection_pool.py",
+    "lib/python3.7/site-packages/httpcore/_sync/http.py",
+    "lib/python3.7/site-packages/httpcore/_sync/http11.py",
+    "lib/python3.7/site-packages/httpcore/_sync/http2.py",
+    "lib/python3.7/site-packages/httpcore/_sync/http_proxy.py",
+    "lib/python3.7/site-packages/httpcore/_threadlock.py",
+    "lib/python3.7/site-packages/httpcore/_types.py",
+    "lib/python3.7/site-packages/httpcore/_utils.py",
+    "lib/python3.7/site-packages/httpcore/py.typed",
+    "lib/python3.7/site-packages/httpcore/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_async/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_async/__pycache__/base.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_async/__pycache__/connection.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_async/__pycache__/connection_pool.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_async/__pycache__/http.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_async/__pycache__/http11.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_async/__pycache__/http2.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_async/__pycache__/http_proxy.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_backends/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_backends/__pycache__/anyio.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_backends/__pycache__/asyncio.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_backends/__pycache__/auto.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_backends/__pycache__/base.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_backends/__pycache__/curio.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_backends/__pycache__/sync.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_backends/__pycache__/trio.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/__pycache__/_bytestreams.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/__pycache__/_exceptions.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_sync/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_sync/__pycache__/base.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_sync/__pycache__/connection.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_sync/__pycache__/connection_pool.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_sync/__pycache__/http.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_sync/__pycache__/http11.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_sync/__pycache__/http2.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/_sync/__pycache__/http_proxy.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/__pycache__/_threadlock.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/__pycache__/_types.cpython-37.pyc",
+    "lib/python3.7/site-packages/httpcore/__pycache__/_utils.cpython-37.pyc"
+  ],
+  "fn": "httpcore-0.12.3-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/runner/conda_pkgs_dir/httpcore-0.12.3-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "8ee2c68006d92d0fa729607a210ff505",
+  "name": "httpcore",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/runner/conda_pkgs_dir/httpcore-0.12.3-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/httpcore-0.12.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/httpcore-0.12.3.dist-info/LICENSE.md",
+        "path_type": "hardlink",
+        "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5",
+        "sha256_in_prefix": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5",
+        "size_in_bytes": 1518
+      },
+      {
+        "_path": "site-packages/httpcore-0.12.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "114dd8e73ffba2864422796428f71ef37883f38999eaa158d8662a6121d43341",
+        "sha256_in_prefix": "114dd8e73ffba2864422796428f71ef37883f38999eaa158d8662a6121d43341",
+        "size_in_bytes": 10248
+      },
+      {
+        "_path": "site-packages/httpcore-0.12.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "02a2d8813764562eb4805932fc9027c00232504797e5e10523833bf0312454a4",
+        "sha256_in_prefix": "02a2d8813764562eb4805932fc9027c00232504797e5e10523833bf0312454a4",
+        "size_in_bytes": 4855
+      },
+      {
+        "_path": "site-packages/httpcore-0.12.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/httpcore-0.12.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3aa464174798e461ecb0ca2b16395b4c8ab4ef6be91e917ad1f21003a952f710",
+        "sha256_in_prefix": "3aa464174798e461ecb0ca2b16395b4c8ab4ef6be91e917ad1f21003a952f710",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/httpcore-0.12.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "a2c60e3da7fbaebed7384cae5064f34ef42a873c7faccecf1883239df4097682",
+        "sha256_in_prefix": "a2c60e3da7fbaebed7384cae5064f34ef42a873c7faccecf1883239df4097682",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "site-packages/httpcore-0.12.3.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "91879207a975841369ec9c204b02da8dcb31465ad209528e85829291d831efdf",
+        "sha256_in_prefix": "91879207a975841369ec9c204b02da8dcb31465ad209528e85829291d831efdf",
+        "size_in_bytes": 59
+      },
+      {
+        "_path": "site-packages/httpcore/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "39715cda31e277e6161908b5a19edaa9cebb7779b237ff6c2aada0011dead693",
+        "sha256_in_prefix": "39715cda31e277e6161908b5a19edaa9cebb7779b237ff6c2aada0011dead693",
+        "size_in_bytes": 1493
+      },
+      {
+        "_path": "site-packages/httpcore/_async/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/httpcore/_async/base.py",
+        "path_type": "hardlink",
+        "sha256": "d58c7593f5e81b7a5dedc041b0506b31aaf1655116ed3ff8daa43c3c5d3fd565",
+        "sha256_in_prefix": "d58c7593f5e81b7a5dedc041b0506b31aaf1655116ed3ff8daa43c3c5d3fd565",
+        "size_in_bytes": 3248
+      },
+      {
+        "_path": "site-packages/httpcore/_async/connection.py",
+        "path_type": "hardlink",
+        "sha256": "4379e6df32a7642adbdd9ef21b41048b9467a135b0c0e590ba869f0b6636f571",
+        "sha256_in_prefix": "4379e6df32a7642adbdd9ef21b41048b9467a135b0c0e590ba869f0b6636f571",
+        "size_in_bytes": 6672
+      },
+      {
+        "_path": "site-packages/httpcore/_async/connection_pool.py",
+        "path_type": "hardlink",
+        "sha256": "3b291fa06bb5406e3d76579aa114b8fb01a027d485208aa1e5b881c2a94009be",
+        "sha256_in_prefix": "3b291fa06bb5406e3d76579aa114b8fb01a027d485208aa1e5b881c2a94009be",
+        "size_in_bytes": 15121
+      },
+      {
+        "_path": "site-packages/httpcore/_async/http.py",
+        "path_type": "hardlink",
+        "sha256": "2df93b23e2d5d242366cd5cb08e8df4d64a6fc56fe1670e5f1ff5a8deaee004f",
+        "sha256_in_prefix": "2df93b23e2d5d242366cd5cb08e8df4d64a6fc56fe1670e5f1ff5a8deaee004f",
+        "size_in_bytes": 1071
+      },
+      {
+        "_path": "site-packages/httpcore/_async/http11.py",
+        "path_type": "hardlink",
+        "sha256": "e3739c8f81ef11531df76da96c813eab6089b29caafe6661002ca5cd1580f663",
+        "sha256_in_prefix": "e3739c8f81ef11531df76da96c813eab6089b29caafe6661002ca5cd1580f663",
+        "size_in_bytes": 7064
+      },
+      {
+        "_path": "site-packages/httpcore/_async/http2.py",
+        "path_type": "hardlink",
+        "sha256": "6dca383a8be2274b10df13e0971e2880e3a1e092308f3f52840dc9f805e23e81",
+        "sha256_in_prefix": "6dca383a8be2274b10df13e0971e2880e3a1e092308f3f52840dc9f805e23e81",
+        "size_in_bytes": 15218
+      },
+      {
+        "_path": "site-packages/httpcore/_async/http_proxy.py",
+        "path_type": "hardlink",
+        "sha256": "979f6e06b1383b1be5eaf8714a5ef522759c634be47a7f5a5de81bb2652666db",
+        "sha256_in_prefix": "979f6e06b1383b1be5eaf8714a5ef522759c634be47a7f5a5de81bb2652666db",
+        "size_in_bytes": 9648
+      },
+      {
+        "_path": "site-packages/httpcore/_backends/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/httpcore/_backends/anyio.py",
+        "path_type": "hardlink",
+        "sha256": "6858f877e22e427116e6f291781da96acc4a2ef39f007b2878e881086ddccf6a",
+        "sha256_in_prefix": "6858f877e22e427116e6f291781da96acc4a2ef39f007b2878e881086ddccf6a",
+        "size_in_bytes": 6372
+      },
+      {
+        "_path": "site-packages/httpcore/_backends/asyncio.py",
+        "path_type": "hardlink",
+        "sha256": "f03bec0a6623f5c60ef9f466d0c1cfa4fd115e05488425cbcfa72a88fa5cf9ad",
+        "sha256_in_prefix": "f03bec0a6623f5c60ef9f466d0c1cfa4fd115e05488425cbcfa72a88fa5cf9ad",
+        "size_in_bytes": 10964
+      },
+      {
+        "_path": "site-packages/httpcore/_backends/auto.py",
+        "path_type": "hardlink",
+        "sha256": "5b31da80a0d0f1964053797876f01df69e042d4f496fcc6737e88257c90fed72",
+        "sha256_in_prefix": "5b31da80a0d0f1964053797876f01df69e042d4f496fcc6737e88257c90fed72",
+        "size_in_bytes": 2217
+      },
+      {
+        "_path": "site-packages/httpcore/_backends/base.py",
+        "path_type": "hardlink",
+        "sha256": "866014c6000323e7e659c891b38881c5ad00d84f9abdac2e68e5a8717fc0f673",
+        "sha256_in_prefix": "866014c6000323e7e659c891b38881c5ad00d84f9abdac2e68e5a8717fc0f673",
+        "size_in_bytes": 3796
+      },
+      {
+        "_path": "site-packages/httpcore/_backends/curio.py",
+        "path_type": "hardlink",
+        "sha256": "8375af8280321ba178d9f850203a70855783feb26ab1b23b68ff06581a3cc305",
+        "sha256_in_prefix": "8375af8280321ba178d9f850203a70855783feb26ab1b23b68ff06581a3cc305",
+        "size_in_bytes": 6239
+      },
+      {
+        "_path": "site-packages/httpcore/_backends/sync.py",
+        "path_type": "hardlink",
+        "sha256": "6e004dae3ccf1d94af6af33c1494f86ace4d67d1353c541956240c877b378a13",
+        "sha256_in_prefix": "6e004dae3ccf1d94af6af33c1494f86ace4d67d1353c541956240c877b378a13",
+        "size_in_bytes": 5509
+      },
+      {
+        "_path": "site-packages/httpcore/_backends/trio.py",
+        "path_type": "hardlink",
+        "sha256": "bd7fda73da82755f220dbac7c30fb71a435e75955e0f3f4d03e6b3960759c64a",
+        "sha256_in_prefix": "bd7fda73da82755f220dbac7c30fb71a435e75955e0f3f4d03e6b3960759c64a",
+        "size_in_bytes": 6514
+      },
+      {
+        "_path": "site-packages/httpcore/_bytestreams.py",
+        "path_type": "hardlink",
+        "sha256": "e3f17a9b7d115eb8565a7c83c688279867d59c136037a3509a3e16bfc2628b11",
+        "sha256_in_prefix": "e3f17a9b7d115eb8565a7c83c688279867d59c136037a3509a3e16bfc2628b11",
+        "size_in_bytes": 2044
+      },
+      {
+        "_path": "site-packages/httpcore/_exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "c627a78a70281be21e10899ae8e2233439547d4018c87fc7c7ae765364552b0b",
+        "sha256_in_prefix": "c627a78a70281be21e10899ae8e2233439547d4018c87fc7c7ae765364552b0b",
+        "size_in_bytes": 1115
+      },
+      {
+        "_path": "site-packages/httpcore/_sync/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/httpcore/_sync/base.py",
+        "path_type": "hardlink",
+        "sha256": "fba18ebc2049737da1b63f48fb249f23e5cb13e56121b0c8b084289e8aab5a8f",
+        "sha256_in_prefix": "fba18ebc2049737da1b63f48fb249f23e5cb13e56121b0c8b084289e8aab5a8f",
+        "size_in_bytes": 3181
+      },
+      {
+        "_path": "site-packages/httpcore/_sync/connection.py",
+        "path_type": "hardlink",
+        "sha256": "abc02b8f50f2ae88f7f4c60e35bcdebd1c2d8ed400c2e6e5da339e669351510c",
+        "sha256_in_prefix": "abc02b8f50f2ae88f7f4c60e35bcdebd1c2d8ed400c2e6e5da339e669351510c",
+        "size_in_bytes": 6568
+      },
+      {
+        "_path": "site-packages/httpcore/_sync/connection_pool.py",
+        "path_type": "hardlink",
+        "sha256": "ae7fe9710051e528729f3b0f51432ab9b4805011fca60c45ab6ad26ff0be3a16",
+        "sha256_in_prefix": "ae7fe9710051e528729f3b0f51432ab9b4805011fca60c45ab6ad26ff0be3a16",
+        "size_in_bytes": 14850
+      },
+      {
+        "_path": "site-packages/httpcore/_sync/http.py",
+        "path_type": "hardlink",
+        "sha256": "ddfce55ed59fb0af93a17e7019c9bddc82db06c65a4db6aa4b3fdbe303353cbe",
+        "sha256_in_prefix": "ddfce55ed59fb0af93a17e7019c9bddc82db06c65a4db6aa4b3fdbe303353cbe",
+        "size_in_bytes": 1060
+      },
+      {
+        "_path": "site-packages/httpcore/_sync/http11.py",
+        "path_type": "hardlink",
+        "sha256": "5d7cd7121803260d2241f0ef7a5e4667eb1a81026e540e7b0999cbef05f73951",
+        "sha256_in_prefix": "5d7cd7121803260d2241f0ef7a5e4667eb1a81026e540e7b0999cbef05f73951",
+        "size_in_bytes": 6883
+      },
+      {
+        "_path": "site-packages/httpcore/_sync/http2.py",
+        "path_type": "hardlink",
+        "sha256": "0af5a95bab2d6de21d9e39401b8e615d8d411a5da0c95302c33e76c5b94bc773",
+        "sha256_in_prefix": "0af5a95bab2d6de21d9e39401b8e615d8d411a5da0c95302c33e76c5b94bc773",
+        "size_in_bytes": 14878
+      },
+      {
+        "_path": "site-packages/httpcore/_sync/http_proxy.py",
+        "path_type": "hardlink",
+        "sha256": "40dd76f7ba8348c960b982ded4af989733e9c24781ddf7f95f2cd7763150f809",
+        "sha256_in_prefix": "40dd76f7ba8348c960b982ded4af989733e9c24781ddf7f95f2cd7763150f809",
+        "size_in_bytes": 9533
+      },
+      {
+        "_path": "site-packages/httpcore/_threadlock.py",
+        "path_type": "hardlink",
+        "sha256": "5dcf96788f2d0e1d88bedec285b96fdc79a16c18195ca328e523277978d90c21",
+        "sha256_in_prefix": "5dcf96788f2d0e1d88bedec285b96fdc79a16c18195ca328e523277978d90c21",
+        "size_in_bytes": 813
+      },
+      {
+        "_path": "site-packages/httpcore/_types.py",
+        "path_type": "hardlink",
+        "sha256": "f7b349d387b13da3e861907fcb8795e2a61fa9ecabf5713ecd8aa418401a1ae2",
+        "sha256_in_prefix": "f7b349d387b13da3e861907fcb8795e2a61fa9ecabf5713ecd8aa418401a1ae2",
+        "size_in_bytes": 331
+      },
+      {
+        "_path": "site-packages/httpcore/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "27e7f3f8c9387c9ee81adc36deaefd77e652d58aec0b95627b7437902f627687",
+        "sha256_in_prefix": "27e7f3f8c9387c9ee81adc36deaefd77e652d58aec0b95627b7437902f627687",
+        "size_in_bytes": 3209
+      },
+      {
+        "_path": "site-packages/httpcore/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_async/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_async/__pycache__/base.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_async/__pycache__/connection.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_async/__pycache__/connection_pool.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_async/__pycache__/http.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_async/__pycache__/http11.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_async/__pycache__/http2.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_async/__pycache__/http_proxy.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_backends/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_backends/__pycache__/anyio.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_backends/__pycache__/asyncio.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_backends/__pycache__/auto.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_backends/__pycache__/base.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_backends/__pycache__/curio.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_backends/__pycache__/sync.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_backends/__pycache__/trio.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/__pycache__/_bytestreams.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/__pycache__/_exceptions.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_sync/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_sync/__pycache__/base.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_sync/__pycache__/connection.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_sync/__pycache__/connection_pool.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_sync/__pycache__/http.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_sync/__pycache__/http11.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_sync/__pycache__/http2.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/_sync/__pycache__/http_proxy.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/__pycache__/_threadlock.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/__pycache__/_types.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/httpcore/__pycache__/_utils.cpython-37.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "70dffb2dc6ce5b6a9e4232fcbdc6ee38ddfacfc25b4443fb5280832a55783164",
+  "size": 33396,
+  "subdir": "noarch",
+  "timestamp": 1611864915585,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/httpcore-0.12.3-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.12.3"
+}

@@ -1,0 +1,111 @@
+{
+  "build": "py37he8f5f7f_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=9.4.0",
+    "libstdcxx-ng >=9.4.0",
+    "numpy >=1.18.5,<2.0a0",
+    "python >=3.7,<3.8.0a0",
+    "python_abi 3.7.* *_cp37m",
+    "scipy"
+  ],
+  "extracted_package_dir": "/home/runner/conda_pkgs_dir/qdldl-python-0.1.5-py37he8f5f7f_2",
+  "files": [
+    "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/LICENSE",
+    "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/METADATA",
+    "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/RECORD",
+    "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/REQUESTED",
+    "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/WHEEL",
+    "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/direct_url.json",
+    "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/qdldl.cpython-37m-x86_64-linux-gnu.so"
+  ],
+  "fn": "qdldl-python-0.1.5-py37he8f5f7f_2.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "link": {
+    "source": "/home/runner/conda_pkgs_dir/qdldl-python-0.1.5-py37he8f5f7f_2",
+    "type": 1
+  },
+  "md5": "331030215179ef11f7f519121c22a3c6",
+  "name": "qdldl-python",
+  "package_tarball_full_path": "/home/runner/conda_pkgs_dir/qdldl-python-0.1.5-py37he8f5f7f_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "656f63ac3b94a6e9c906acd8f27e7e260a0293d19d77320bf99132f5cd2d1dea",
+        "sha256_in_prefix": "656f63ac3b94a6e9c906acd8f27e7e260a0293d19d77320bf99132f5cd2d1dea",
+        "size_in_bytes": 11376
+      },
+      {
+        "_path": "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "ec6c43d087e9fe9b9ce78b7fd04afff222c7f4b83e31aa6f738e673f87d9de59",
+        "sha256_in_prefix": "ec6c43d087e9fe9b9ce78b7fd04afff222c7f4b83e31aa6f738e673f87d9de59",
+        "size_in_bytes": 1731
+      },
+      {
+        "_path": "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "e8468de71fe15ab3f3dc2c8e357a2862a22e7b31411a5c9b44e08b4a18528ac0",
+        "sha256_in_prefix": "e8468de71fe15ab3f3dc2c8e357a2862a22e7b31411a5c9b44e08b4a18528ac0",
+        "size_in_bytes": 745
+      },
+      {
+        "_path": "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7fb3facf40f0f4168c5bcb4e5f5415f50808e71509b03de30b00319831b8f84d",
+        "sha256_in_prefix": "7fb3facf40f0f4168c5bcb4e5f5415f50808e71509b03de30b00319831b8f84d",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "26afdfbbfa2cf7a91b1c13bd8a70e253f255344f4ff2ef598a88f28869d7d873",
+        "sha256_in_prefix": "26afdfbbfa2cf7a91b1c13bd8a70e253f255344f4ff2ef598a88f28869d7d873",
+        "size_in_bytes": 108
+      },
+      {
+        "_path": "lib/python3.7/site-packages/qdldl-0.1.5.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "71f7157768039eb43f939d5f315c11fb6146fbbc4524310071303ba3aa69bfe0",
+        "sha256_in_prefix": "71f7157768039eb43f939d5f315c11fb6146fbbc4524310071303ba3aa69bfe0",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python3.7/site-packages/qdldl.cpython-37m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "cafa3819f86ceb71119098c41762ff48eefc364ea8ec65e55c4d174df6e622cd",
+        "sha256_in_prefix": "cafa3819f86ceb71119098c41762ff48eefc364ea8ec65e55c4d174df6e622cd",
+        "size_in_bytes": 223952
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "7652ce44ef8e81754118b5e03fbf694561aeaccd3883e9a126f3126d24ccd768",
+  "size": 98203,
+  "subdir": "linux-64",
+  "timestamp": 1636438977241,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/qdldl-python-0.1.5-py37he8f5f7f_2.tar.bz2",
+  "version": "0.1.5"
+}
