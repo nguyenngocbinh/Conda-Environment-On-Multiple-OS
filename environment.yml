@@ -1,16 +1,22 @@
-name: env_ascore
+name: demo_v1
+
 channels:
   - conda-forge
   - defaults
+
 dependencies:
-  - python=3.8
+  - python=3.7
+  - httpx=0.17.1
+  - jinja2
   - numpy
-  - pandas==1.4.4  
-  # - joblib==1.1.0
-  # - statsmodels==0.13.2
-  # - ipykernel
-  - zipp  
-  - pip
-  # - pip: 
-  #   - optbinning==0.17.3
-  #   - ortools==9.4.1874
+  - openpyxl
+  - pandas
+  - pickleshare
+  - osqp
+  - joblib
+  - pip:
+    - fastapi-plugins==0.6.0
+    - python-multipart
+    - imutils
+    - scikit-learn
+    - lightgbm
