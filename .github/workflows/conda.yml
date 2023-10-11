@@ -38,6 +38,13 @@ jobs:
       run: conda list --explicit > environment_spec.txt
       working-directory: ${{ github.workspace }}
 
+    - name: Get Conda Environment Path
+      run: |
+        # Run `conda env list` and extract the path of the environment you want to copy
+        CONDA_ENV_PATH=$(conda env list | grep -E 'demo_v1\s' | awk '{print $1}')
+        echo "Conda environment path: $CONDA_ENV_PATH"
+      id: get_env_path
+  
     - name: Create Temporary Directory
       run: mkdir -p temp_env
       working-directory: ${{ github.workspace }}
