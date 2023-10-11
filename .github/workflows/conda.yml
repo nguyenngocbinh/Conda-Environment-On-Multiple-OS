@@ -38,11 +38,12 @@ jobs:
       run: conda list --explicit > environment_spec.txt
       working-directory: ${{ github.workspace }}
 
+    - name: Create Temporary Directory
+      run: mkdir -p temp_env
+      working-directory: ${{ github.workspace }}
+
     - name: Copy Conda Environments
-      run: |
-        # Create a temporary directory to store the environments
-        mkdir -p temp_envs
-        cp -r /usr/share/miniconda/envs/demo_v1/* temp_env/
+      run: cp -r /usr/share/miniconda/envs/demo_v1/* temp_env/
       working-directory: ${{ github.workspace }}
       
     - name: Save Environment Specification to Another Branch
