@@ -9,7 +9,7 @@ dependencies:
   # - joblib==1.1.0
   # - statsmodels==0.13.2
   # - ipykernel
-  # - zipp  
+  - zipp  
   - pip
   # - pip: 
   #   - optbinning==0.17.3
