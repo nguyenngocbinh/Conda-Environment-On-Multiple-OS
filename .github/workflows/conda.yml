@@ -41,6 +41,11 @@ jobs:
         run: conda env export --name ${{ env.ENV_NAME }} > environment_spec.txt
         working-directory: ${{ github.workspace }}
 
+      - name: Activate Conda Environment
+        run: conda activate ${{ env.ENV_NAME }}
+        shell: bash
+        working-directory: ${{ github.workspace }}
+
       - name: Create Temporary Directory
         run: mkdir -p temp_env
         working-directory: ${{ github.workspace }}
@@ -62,11 +67,6 @@ jobs:
         working-directory: ${{ github.workspace }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Activate Conda Environment
-        run: conda activate ${{ env.ENV_NAME }}
-        shell: bash
-        working-directory: ${{ github.workspace }}
 
       # - name: Install Additional Dependencies (if needed)
       #   run: |
