@@ -5,6 +5,13 @@ on:
     branches:
       - master
 
+env:
+  GIT_EMAIL: nguyenngocbinhneu@gmail.com
+  GIT_NAME: Ngoc Binh
+  CONDA_ENV_FILE: environment.yml
+  PYTHON_SCRIPT: your_script.py
+  ENV_NAME: "demo_v1"
+
 jobs:
   build:
     strategy:
@@ -15,7 +22,7 @@ jobs:
 
     steps:
       - name: Configure Git
-        run: git config --global user.email "nguyenngocbinhneu@gmail.com" && git config --global user.name "Ngoc Binh"
+        run: git config --global user.email "${{ env.GIT_EMAIL }}" && git config --global user.name "${{ env.GIT_NAME }}"
 
       - name: Checkout code
         uses: actions/checkout@v2
@@ -27,15 +34,20 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
 
       - name: Create Conda Environment
-        run: conda env create --name demo_v1 --file environment.yml
+        run: conda env create --name ${{ env.ENV_NAME }} --file ${{ env.CONDA_ENV_FILE }}
         working-directory: ${{ github.workspace }}
 
       - name: Generate Conda Environment Specification
-        run: conda env export --name demo_v1 > environment_spec.txt
+        run: conda env export --name ${{ env.ENV_NAME }} > environment_spec.txt
         working-directory: ${{ github.workspace }}
 
       - name: Create Temporary Directory
         run: mkdir -p temp_env
+        working-directory: ${{ github.workspace }}
+        
+      - name: Display $CONDA_PREFIX
+        run: echo $CONDA_PREFIX
+        shell: bash
         working-directory: ${{ github.workspace }}
 
       - name: Copy Conda Environments
@@ -52,7 +64,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Activate Conda Environment
-        run: conda activate demo_v1
+        run: conda activate ${{ env.ENV_NAME }}
         shell: bash
         working-directory: ${{ github.workspace }}
 
@@ -61,6 +73,6 @@ jobs:
       #     conda install -c conda-forge some_package
       #   working-directory: ${{ github.workspace }}
 
-      # - name: Run Your Python Script
-      #   run: python your_script.py
-      #   working-directory: ${{ github.workspace }}
+      - name: Run Your Python Script
+        run: python your_script.py
+        working-directory: ${{ github.workspace }}
