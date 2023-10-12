@@ -17,62 +17,55 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
+        include:
+          - os: ubuntu-latest
+            conda_path: /usr/share/miniconda/envs
+          - os: windows-latest
+            conda_path: C:\Miniconda\envs\
+          - os: macos-latest
+            conda_path: /usr/local/miniconda/envs/
 
     runs-on: ${{ matrix.os }}
+    env:
+      CONDA_PREFIX: ${{ matrix.conda_path }}
 
+    # GIT Operations
     steps:
-      - name: Configure Git
-        run: git config --global user.email "${{ env.GIT_EMAIL }}" && git config --global user.name "${{ env.GIT_NAME }}"
-
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Switch to Branch
-        run: git switch -C ${{ matrix.os }}-branch
+      - name: Configure Git
+        run: |
+          git config --global user.email "${{ env.GIT_EMAIL }}"
+          git config --global user.name "${{ env.GIT_NAME }}"
+          git switch -C ${{ matrix.os }}-branch
 
+      # Conda Operations
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v2
 
-      - name: Create Conda Environment
-        run: conda env create --name ${{ env.ENV_NAME }} --file ${{ env.CONDA_ENV_FILE }}
+      - name: Create and Activate Conda Environment
+        run: |
+          conda env create --name ${{ env.ENV_NAME }} --file ${{ env.CONDA_ENV_FILE }}
+          conda activate ${{ env.ENV_NAME }}
+        shell: bash
         working-directory: ${{ github.workspace }}
 
       - name: Generate Conda Environment Specification
         run: conda env export --name ${{ env.ENV_NAME }} > environment_spec.txt
-        working-directory: ${{ github.workspace }}
 
-      - name: Activate Conda Environment
-        run: conda activate ${{ env.ENV_NAME }}
-        shell: bash
-        working-directory: ${{ github.workspace }}
-
-      - name: Create Temporary Directory
-        run: mkdir -p temp_env
-        working-directory: ${{ github.workspace }}
-        
-      - name: Display $CONDA_PREFIX
-        run: echo $CONDA_PREFIX
-        shell: bash
-        working-directory: ${{ github.workspace }}
-
-      - name: Copy Conda Environments
-        run: cp -r $CONDA_PREFIX/* temp_env/
-        working-directory: ${{ github.workspace }}
-
-      - name: Save Environment Specification to Another Branch
+      # File Operations
+      - name: Prepare Environment for Push
         run: |
+          mkdir -p temp_env
+          cp -r $CONDA_PREFIX/* temp_env/
           git add environment_spec.txt temp_env
           git commit -m "Add environment specification"
           git push origin ${{ matrix.os }}-branch --force
-        working-directory: ${{ github.workspace }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # - name: Install Additional Dependencies (if needed)
-      #   run: |
-      #     conda install -c conda-forge some_package
-      #   working-directory: ${{ github.workspace }}
-
-      - name: Run Your Python Script
-        run: python your_script.py
         working-directory: ${{ github.workspace }}
+
+      # Execute Python Script
+      - name: Run Your Python Script
+        run: python ${{ env.PYTHON_SCRIPT }}
