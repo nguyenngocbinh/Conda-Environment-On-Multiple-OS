@@ -3,76 +3,64 @@ name: Create Conda Environment on Multiple OS
 on:
   push:
     branches:
-      - master  # Replace with your desired source branch
+      - master
 
 jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest] # , centos-latest, debian-latest, fedora-latest
+        os: [ubuntu-latest, windows-latest, macos-latest]
 
     runs-on: ${{ matrix.os }}
 
     steps:
-    - name: Configure Git
-      run: |
-         git config --global user.email "nguyenngocbinhneu@gmail.com"
-         git config --global user.name "Ngoc Binh"
+      - name: Configure Git
+        run: git config --global user.email "nguyenngocbinhneu@gmail.com" && git config --global user.name "Ngoc Binh"
 
-    - name: Delete Existing Branch
-      run: |
-         git branch -D ${{ matrix.os }}-branch
-      continue-on-error: true  # Ignore error if the branch doesn't exist
-      
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Miniconda
-      uses: conda-incubator/setup-miniconda@v2
+      - name: Switch to Branch
+        run: git switch -C ${{ matrix.os }}-branch
 
-    - name: Create Conda Environment
-      run: conda env create -f environment.yml
-      working-directory: ${{ github.workspace }}
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
 
-    - name: Generate Conda Environment Specification
-      run: conda list --explicit > environment_spec.txt
-      working-directory: ${{ github.workspace }}
+      - name: Create Conda Environment
+        run: conda env create --name demo_v1 --file environment.yml
+        working-directory: ${{ github.workspace }}
 
-    - name: Get Conda Environment Path
-      run: |
-        # Run `conda env list` and extract the path of the environment you want to copy
-        CONDA_ENV_PATH=$(conda env list | grep -E 'demo_v1\s' | awk '{print $1}')
-        echo "Conda environment path: $CONDA_ENV_PATH"
-      id: get_env_path
-  
-    - name: Create Temporary Directory
-      run: mkdir -p temp_env
-      working-directory: ${{ github.workspace }}
+      - name: Generate Conda Environment Specification
+        run: conda env export --name demo_v1 > environment_spec.txt
+        working-directory: ${{ github.workspace }}
 
-    - name: Copy Conda Environments
-      run: cp -r /usr/share/miniconda/envs/demo_v1/* temp_env/
-      working-directory: ${{ github.workspace }}
-      
-    - name: Save Environment Specification to Another Branch
-      run: |
-        git checkout -b ${{ matrix.os }}-branch        
-        # git add environment_spec.txt
-        git add temp_env
-        git commit -m "Add environment specification"
-        git push origin ${{ matrix.os }}-branch --force
-      working-directory: ${{ github.workspace }}
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Temporary Directory
+        run: mkdir -p temp_env
+        working-directory: ${{ github.workspace }}
 
-    # - name: Activate Conda Environment
-    #   run: conda activate myenv
-    #   working-directory: ${{ github.workspace }}
+      - name: Copy Conda Environments
+        run: cp -r $CONDA_PREFIX/* temp_env/
+        working-directory: ${{ github.workspace }}
 
-    # - name: Install Additional Dependencies (if needed)
-    #   run: |
-    #     conda install -c conda-forge some_package
-    #   working-directory: ${{ github.workspace }}
+      - name: Save Environment Specification to Another Branch
+        run: |
+          git add environment_spec.txt temp_env
+          git commit -m "Add environment specification"
+          git push origin ${{ matrix.os }}-branch --force
+        working-directory: ${{ github.workspace }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Run Your Python Script
-      run: python your_script.py
-      working-directory: ${{ github.workspace }}
+      - name: Activate Conda Environment
+        run: conda activate demo_v1
+        shell: bash
+        working-directory: ${{ github.workspace }}
+
+      # - name: Install Additional Dependencies (if needed)
+      #   run: |
+      #     conda install -c conda-forge some_package
+      #   working-directory: ${{ github.workspace }}
+
+      # - name: Run Your Python Script
+      #   run: python your_script.py
+      #   working-directory: ${{ github.workspace }}
